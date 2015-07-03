@@ -8,26 +8,6 @@
   <h3>The prime factors of 13195 are 5, 7, 13 and 29.</h3>
   <h3>What is the largest prime factor of the number 600851475143 ?</h3>
   <h1>Check the JS Console!</h1>
-  <script type="text/javascript">
-    var our_number = 600851475143;
-    var i;
-    var times_iterated = 0;
-    // We will reduce our number by diving into it until we reach
-    // the largest prime factor.
-    // Start from the first prime factor, 2.
-    // Keep going until our prime factor is lower than our iterator 
-    for (i = 2; i <= our_number; i++) {
-      if (our_number % i === 0) {
-        our_number /= i;
-        // decrement i, our number might still be divisible by our current iterator
-        i--;
-      }
-      times_iterated++;
-    }
-
-    console.log("Times iterated: " + times_iterated);
-    console.log("Largest prime factor: " + i);
-
-  </script>
+  <script type="text/javascript" src="largest_prime.js"></script>
 </body>
 </html>
